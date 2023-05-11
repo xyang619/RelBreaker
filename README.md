@@ -37,7 +37,7 @@ output remove list L
 
 # Implementation and usage
 
-Here I 
+Here I implemented the algorithm described above in python, and the usage of the tool as below:
 ```
 usage: graph.py [-h] -i INPUT [-o OUTPUT] [-c CUTOFF] [-t]
 
@@ -51,11 +51,22 @@ optional arguments:
                         Cutoff for kinship, support absolute kinship value or degree such as (1, 2, or 3), default=0.0884
   -t, --has-title       The input has title or not, default=False
 ```
+For example:
+```bash
+python3 rel_breaker.py --input sample.txt --output removed.txt --cutoff 0.0884 --has-title 
+```
 
-# Sample input
+# Sample input and output
 Sample input look like below (more pairs of relationship please refer to sample.txt)
 ```
 SID1 SID2 HetHet IBS0 Kinship
 S1000025 S2025656 0.045 0.0144 0.061
 S1000130 S3375759 0.047 0.0133 0.0739
+```
+Sample output look like (more id in the removed list please refer to removed.txt)
+```
+S1000201
+S1000339
+S1000350
+S1000365
 ```
