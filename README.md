@@ -4,7 +4,7 @@ In genetic analysis, it is often necessary to remove closely related samples bec
 
 To address this problem, I propose a graph-based method to break down the close relationships among samples while attempting to retain as many samples as possible for subsequent analysis. This graph-based approach aims to capture the connections between samples and utilize this information to make informed decisions about which samples to retain and which ones to remove.
 # Algorithm to solve the problem
-
+The vallina ideas to solve the problem comes from Yang X, Xu S, The HUGO Pan-Asian SNP Consortium (2011) Identification of Close Relatives in the HUGO Pan-Asian SNP Database. PLOS ONE 6(12): e29502. https://doi.org/10.1371/journal.pone.0029502 
 1. Graph Construction: Build a graph representation of relationships among the samples, where each sample is represented as a node in the graph. The connections between samples is determined based on kinship calculated by KING (Manichaikul A, Mychaleckyj JC, Rich SS, Daly K, Sale M, Chen WM (2010) Robust relationship inference in genome-wide association studies. Bioinformatics 26(22):2867-2873). 
 
 Here we focus on the relationships among samples with a high degree of relatedness.
